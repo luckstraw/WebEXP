@@ -3,10 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Fullstack App</title>
+    <title>Your App Title</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 </head>
 <body>
-    <h1>Welcome to My Fullstack App</h1>
-    <a href="http://localhost:5000/auth/google">Login with Google</a>
+    <h1>Welcome to Your App</h1>
+    
+    <div id="login">
+        <h2>Login with Google</h2>
+        <a href="/auth/google" id="google-login-button">Login with Google</a>
+    </div>
+
+    <div id="dashboard" style="display: none;">
+        <h2>Dashboard</h2>
+        <h3>Your Answers:</h3>
+        <div id="answers"></div>
+        <h3>Answer a Question:</h3>
+        <textarea id="user-answer"></textarea>
+        <button id="submit-answer">Submit Answer</button>
+        <button id="logout">Logout</button>
+    </div>
+
+    <script src="script.js"></script> <!-- Link to your JS file -->
 </body>
 </html>
